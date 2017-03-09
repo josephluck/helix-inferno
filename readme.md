@@ -1,5 +1,7 @@
 # Helix Inferno
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/josephluck/helix-inferno.svg)](https://greenkeeper.io/)
+
 Warning: this isn't a finished library! Use with caution.
 
 For people who like fast, react-like views with architecture from Helix.
