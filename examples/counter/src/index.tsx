@@ -1,4 +1,3 @@
-require('es6-shim')
 import helix from 'helix-js'
 import h, {renderer} from '../../../src/index'
 

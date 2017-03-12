@@ -1,4 +1,3 @@
-require('es6-shim')
 import helix from 'helix-js'
 import h, {renderer} from '../../../src/index'
 
@@ -14,7 +13,6 @@ function stopMeasure () {
     window.setTimeout(function metaStopMeasure () {
       lastMeasure = null
       const stop = performance.now()
-      const duration = 0
       console.log(last + ' took ' + (stop - startTime))
     }, 0)
   }
