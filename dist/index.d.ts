@@ -1,3 +1,3 @@
-import * as h from 'inferno-create-element';
-export default h;
-export declare function renderer(dom: any): (node: any, state: any, prev: any, actions: any) => void;
+import * as createElement from 'inferno-create-element';
+export declare const h: typeof createElement;
+export default function (opts: any): void;
