@@ -1,5 +1,4 @@
-import helix from 'helix-js'
-import h, {renderer} from '../../../src/index'
+import helix, {h} from '../../../src/index'
 
 let startTime
 let lastMeasure
@@ -231,5 +230,5 @@ helix({
       view,
     },
   },
-  render: renderer(mount),
+  mount,
 })

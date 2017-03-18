@@ -1,5 +1,4 @@
-import helix from 'helix-js'
-import h, {renderer} from '../../../src/index'
+import helix, {h} from '../../../src/index'
 
 function links ({
   onRouteClick,
@@ -151,5 +150,5 @@ helix({
       view: viewThree,
     }
   },
-  render: renderer(mount),
+  mount,
 })
