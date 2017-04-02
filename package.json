@@ -1,21 +1,21 @@
 {
   "name": "helix-inferno",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Inferno renderer for helix",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "files": [
     "src/",
-    "dist/"
+    "lib/"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/josephluck/helix-inferno"
   },
-  "types": "./dist/index.d.ts",
+  "types": "./lib/index.d.ts",
   "scripts": {
-    "dist": "tsc && npm run browserify && npm run minify",
-    "browserify": "browserify -g babelify dist/index.js -o dist/bundle.js",
-    "minify": "uglifyjs dist/bundle.js -c -m -o dist/bundle.min.js",
+    "dist": "rm -rf ./lib && mkdir lib && tsc && npm run browserify && npm run minify",
+    "browserify": "browserify -g babelify lib/index.js -o lib/bundle.js",
+    "minify": "uglifyjs lib/bundle.js -c -m -o lib/bundle.min.js",
     "deploy": "npm install && npm run dist && npm publish"
   },
   "author": "Joseph Luck",
@@ -26,7 +26,6 @@
     "babel-preset-stage-0": "^6.22.0",
     "babelify": "^7.3.0",
     "browserify": "^14.1.0",
-    "helix-js": "file:../helix",
     "tsify": "^3.0.1",
     "tslint": "^4.4.2",
     "tslint-config-standard": "^4.0.0",
@@ -34,8 +33,8 @@
     "uglify-js": "^2.7.5"
   },
   "dependencies": {
-    "helix-js": "^1.0.1",
-    "inferno": "^1.3.0-rc.10",
-    "inferno-create-element": "^1.3.0-rc.10"
+    "helix-js": "^1.1.3",
+    "inferno": "^1.5.6",
+    "inferno-create-element": "^1.5.6"
   }
 }
