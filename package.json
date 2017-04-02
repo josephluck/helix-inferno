@@ -1,6 +1,6 @@
 {
   "name": "helix-inferno",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Inferno renderer for helix",
   "main": "lib/index.js",
   "files": [
@@ -16,7 +16,7 @@
     "dist": "rm -rf ./lib && mkdir lib && tsc && npm run browserify && npm run minify",
     "browserify": "browserify -g babelify lib/index.js -o lib/bundle.js",
     "minify": "uglifyjs lib/bundle.js -c -m -o lib/bundle.min.js",
-    "deploy": "npm install && npm run lib && npm publish"
+    "deploy": "npm install && npm run dist && npm publish"
   },
   "author": "Joseph Luck",
   "license": "ISC",
@@ -26,7 +26,6 @@
     "babel-preset-stage-0": "^6.22.0",
     "babelify": "^7.3.0",
     "browserify": "^14.1.0",
-    "helix-js": "file:../helix",
     "tsify": "^3.0.1",
     "tslint": "^4.4.2",
     "tslint-config-standard": "^4.0.0",
