@@ -1,8 +1,9 @@
-import helix from 'helix-js'
+import helix, {log as helixLog} from 'helix-js'
 import inferno from 'inferno'
 import * as createElement from 'inferno-create-element'
 
 export const h = createElement
+export const log = helixLog
 
 function renderer (dom) {
   let _dom = dom
